@@ -72,21 +72,6 @@ var Word = function(word){
 	
 }
 
-/*
-This is what I want to do in the commandline
-var gameWord = new Word("apple");
-gameWord.holderArray();
-console.log(gameWord.displayWord);
-gameWord.newLetter("a");
-console.log(gameWord.displayWord);
-gameWord.newLetter("p");
-console.log(gameWord.displayWord);
-gameWord.newLetter("l");
-console.log(gameWord.displayWord);
-gameWord.newLetter("e");
-console.log(gameWord.displayWord);
-*/
-
 
 
 module.exports = Word;
