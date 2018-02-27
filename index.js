@@ -9,10 +9,6 @@ var gameWord = new Word("banana");
 gameWord.holderArray();
 
 
-//this function is the base case for recursion
-//if the user completely guesses the word then display true
-//else ask the question again
-
 function checkWordGuess(wordForGame){
 	//get the current display word that contains correct letter guesses
 	//and underscores. Join the array together to create on string
@@ -21,13 +17,11 @@ function checkWordGuess(wordForGame){
 	
 	//if the display word is equal to the word that the user needs to guess
 	if(userWordDisplayGuess === wordForGame.word){
-		//print you when
+		//print you win
 		console.log("You win!")
-		//console.log(true);
 		return true
 	}else{
-		console.log("Keep 'em guesses coming!")
-		//question();
+		console.log("Keep going!")
 		return false
 
 	}	
@@ -62,23 +56,7 @@ inquirer.prompt([{
 				question()
 			}
 
-
 	})
+}
 
-	 
-	 //console.log(count)
-	 //question()
-	
-
-}//end of question functions
-
-question()
-
-
-
-
-
-   
-
-
-
+question();
